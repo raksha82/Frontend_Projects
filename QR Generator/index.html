@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QR COde Generator</title>
+    <title>QR Code Generator</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="symbol.jpg" type="image/x-icon">
 </head>
@@ -19,18 +19,26 @@
 
     <div class="Container-2">
         <h6 style="color: grey;">Enter text or URL</h6>
-        <input type="text" id="input-box" maxlength="200px" class="input-container">
+        <input type="text" id="input-box" maxlength="200" class="input-container">
         <div class="generate">
-            <button style="width: 40%;">Generate QR Code</button>
+            <button type="button" id="generate-button" style="width: 40%;" onclick="qrgeneration()">Generate QR Code</button>
         </div>
         
     </div>
 
-    <div class="Container-3">
-        <img class="QR-code" src="symbol.jpg"  height="250px" width="250px">
+    <div class="errordisplay">
+      <p>Input field should not be empty</p>
+    </div>
+
+    <div class="errormsg">
+      <p></p>
+    </div>
+
+    <div class="Container-3-value" id="image-container">
+        <img class="QR-code" id="qr-image" height="250px" width="250px">
         <div class="buttons">
-        <button style="background-color:rgb(31, 228, 34); color: white;"><span style="color: white;"> ↓ </span>Download </button> 
-        <button style="background-color: rgb(255, 255, 227);"><span>⿻ </span>Copy</button>
+        <button id="Download-button" style="background-color:rgb(31, 228, 34); color: white;"><span style="color: white;"> ↓ </span>Download </button> 
+        <button id="Copy-button" style="background-color: rgb(255, 255, 227);"><span>⿻ </span>Copy</button>
         </div>
     </div>
     </div>
