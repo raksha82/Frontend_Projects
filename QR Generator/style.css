@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(196, 249, 246);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.QR-Container{
+    border: solid grey 3px;
+    border-radius: 5%;
+    padding: 2%;
+    background-color: azure;
+    width: 25vw;
+}
+
+.Symbol{
+    display: flex;
+    justify-content: center;
+}
+
+.Container-1{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding: 3%;
+}
+
+.Container-2{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.Container-2 input{
+    border: solid rgb(31, 228, 34) 2px;
+    padding: 1%;
+    
+}
+
+.generate{
+    display: flex;
+    justify-content: center;
+    padding-top: 3%;
+    padding-bottom: 5%;
+}
+
+.generate button{
+    background-color: rgb(183, 232, 182);
+    border: solid 1px rgb(240, 234, 234);
+    border-radius: 8%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.Container-3{
+    
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.Container-3 img{
+    background-color: rgb(239, 238, 233);
+    padding: 7%;
+}
+
+.Container-3 div{
+    display: flex;
+    padding: 3%;
+    padding-top: 8%;
+    gap: 25px;
+}
+
+.buttons button{
+    width: 7vw;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}

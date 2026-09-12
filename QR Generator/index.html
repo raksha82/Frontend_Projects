@@ -5,18 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QR COde Generator</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="symbol.jpg" type="image/x-icon">
 </head>
 <body>
-    <div>
-        <h4>Text or URL to QR Code</h4>
-        <input type="text">
-        <br>
-        <button>Generate QR Code</button>
+    <div class="QR-Container">
+    <div class="Symbol">
+        <img src="symbol.jpg" width="30px" height="30px" alt="">
+    </div>
+    <div class="Container-1">
+        <h2 class="title">QR Code Generator</h2>
+        <h6 style="color: grey;">Fast, simple, and instant</h6>
     </div>
 
-    <div>
-        <img src="" alt="">
-        <button>Download QR Code</button>
+    <div class="Container-2">
+        <h6 style="color: grey;">Enter text or URL</h6>
+        <input type="text" id="input-box" maxlength="200px" class="input-container">
+        <div class="generate">
+            <button style="width: 40%;">Generate QR Code</button>
+        </div>
+        
     </div>
+
+    <div class="Container-3">
+        <img class="QR-code" src="symbol.jpg"  height="250px" width="250px">
+        <div class="buttons">
+        <button style="background-color:rgb(31, 228, 34); color: white;"><span style="color: white;"> ↓ </span>Download </button> 
+        <button style="background-color: rgb(255, 255, 227);"><span>⿻ </span>Copy</button>
+        </div>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
