@@ -55,6 +55,7 @@ body{
     justify-content: center;
     padding-top: 3%;
     padding-bottom: 5%;
+    gap: 10px;
 }
 
 .generate button{
@@ -66,14 +67,13 @@ body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.errordisplay , .errormsg {
+.successdisplay , .errordisplay{
     display: none;
 }
 
-.error , .errormsg{
+.success , .error{
     display: flex;
     justify-content: center;
-    color: red;
 }
 
 .Container-3-value{

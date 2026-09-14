@@ -21,16 +21,17 @@
         <h6 style="color: grey;">Enter text or URL</h6>
         <input type="text" id="input-box" maxlength="200" class="input-container">
         <div class="generate">
-            <button type="button" id="generate-button" style="width: 40%;" onclick="qrgeneration()">Generate QR Code</button>
+            <button type="button" id="generate-button" style="width: 40%;" onclick="qrgeneration()">Generate QR Code</button> 
+            <button type="button" id="clear" onclick="ClearEverything()">Clear</button>
         </div>
         
     </div>
 
-    <div class="errordisplay">
-      <p>Input field should not be empty</p>
+    <div class="successdisplay">
+      <p></p>
     </div>
 
-    <div class="errormsg">
+    <div class="errordisplay">
       <p></p>
     </div>
 
@@ -38,7 +39,7 @@
         <img class="QR-code" id="qr-image" height="250px" width="250px">
         <div class="buttons">
         <button id="Download-button" style="background-color:rgb(31, 228, 34); color: white;"><span style="color: white;"> ↓ </span>Download </button> 
-        <button id="Copy-button" style="background-color: rgb(255, 255, 227);"><span>⿻ </span>Copy</button>
+        <button id="Copy-button" style="background-color: rgb(255, 255, 227);"><span>⿻ </span>Copy URL</button>
         </div>
     </div>
     </div>
