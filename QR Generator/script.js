@@ -47,10 +47,8 @@ const qrgeneration=()=>{
 
 function ClearEverything(){
     content.value="";
-     errormsg.textContent = "";
+    errormsg.textContent = "";
     successmsg.textContent = "";
-    imageurl = "";
-    apiurl = "";
     imagecontainer.classList.remove("Container-3");
 }
 
