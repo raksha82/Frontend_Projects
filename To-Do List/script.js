@@ -21,4 +21,5 @@ function showerror(msg)
 reset.addEventListener("click",()=>
 {
     task.value="";
+    error.textContent="";
 })

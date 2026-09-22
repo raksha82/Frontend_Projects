@@ -1,10 +1,12 @@
 h1 {
   text-align: center;
    font-family: "Black Ops One", system-ui;
+   text-shadow: 2px 4px 8px  red;
 }
 
 *{
     box-sizing: border-box;
+    background-color: rgb(232, 197, 197);
 }
 
 body{
@@ -16,10 +18,15 @@ body{
   flex-direction: column;
   gap: 10px;
   align-items: center;
-  border: 3px solid grey;
+  border: 3px solid rgb(0, 0, 0);
   padding: 3%;
+  border-radius: 3%;
+  
 }
 
+input{
+    border: 2px solid rgb(12, 3, 3);
+}
 
 section{
     display: flex;
@@ -35,3 +42,7 @@ input , button{
     background-color: rgb(216, 28, 28);
 }
 
+span{
+    font-family:"Indie Flower", cursive;
+    font-size: larger;
+}
