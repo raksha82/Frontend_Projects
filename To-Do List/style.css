@@ -17,7 +17,7 @@ body{
   gap: 10px;
   align-items: center;
   border: 3px solid grey;
-  padding: 5%;
+  padding: 3%;
 }
 
 
@@ -30,7 +30,8 @@ input , button{
     padding: 3%;
 }
 
-button{
+#add-button{
     border-radius: 5px;
     background-color: rgb(216, 28, 28);
 }
+
