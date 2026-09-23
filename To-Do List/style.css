@@ -46,3 +46,8 @@ span{
     font-family:"Indie Flower", cursive;
     font-size: larger;
 }
+
+.task-completion span{
+    font-family: "IBM Plex Mono", monospace;
+    padding: 5%;
+}
