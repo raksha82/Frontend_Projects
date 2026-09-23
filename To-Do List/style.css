@@ -28,7 +28,7 @@ input{
     border: 2px solid rgb(12, 3, 3);
 }
 
-section{
+.Main-container{
     display: flex;
     justify-content: center;
 }
@@ -50,9 +50,14 @@ span{
 .task-completion span{
     font-family: "IBM Plex Mono", monospace;
     padding: 5%;
+   
 }
 
-.task-container{
+.task-completion{
+     display: flex;
+}
+
+#task-container{
     display: flex;
     flex-direction: column;
 }
