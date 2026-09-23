@@ -18,16 +18,17 @@ function addTask()
 
    else
    {
-   uncompleted++;
+   success.style.color="green";
+   success.textContent=`Task Added Successfully`;
+   uncompleted++;  
    list.innerHTML += `
-    <div>
+    <div class="task-item">
         <input type="checkbox" onchange="taskStatus(this)">
         <span>${task_value}</span>
     </div>
 `;
-task.value = "";
-   success.style.color="green";
-   success.textContent=`${uncompleted} Task Added Successfully`;
+   updateCount();
+   task.value = "";
    }
 
 }
@@ -55,14 +56,20 @@ function taskStatus(checkbox)
         completed++;
         uncompleted--;
         taskText.style.textDecoration = "line-through";
+        
     }
     else
     {
         completed--;
         uncompleted++;
         taskText.style.textDecoration = "none";
+        
     }
+    updateCount();
 }
 
-complete.textContent=`Completed ${completed}`
-uncomplete.textContent=`UnCompleted ${uncompleted}`
+function updateCount()
+{
+    complete.textContent = `Completed ${completed}`;
+    uncomplete.textContent = `UnCompleted ${uncompleted}`;
+}

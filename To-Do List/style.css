@@ -51,3 +51,13 @@ span{
     font-family: "IBM Plex Mono", monospace;
     padding: 5%;
 }
+
+.task-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.task-item {
+    display: block;
+    margin: 10px 0;
+}
