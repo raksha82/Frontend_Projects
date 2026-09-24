@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(90, 2, 2);
+}
+
+.header-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: "Archivo Black", sans-serif;
+    color: whitesmoke;
+    align-items: center;
+}
+
+.name
+{
+    font-size: 25px;
+    font-family: "Archivo Black", sans-serif;
+}
+.dot{
+    padding: 3px;
+    font-size: 30px;
+    color:rgb(232, 151, 232);
+
+}
+
+.list{
+    display: flex;
+    gap: 30px;
+}
+
+.list li{
+    list-style: none;
+}
+
+.list li a{
+    text-decoration: none;
+    color: rgb(250, 196, 197);
+    text-shadow: 4px 4px 4px rgb(0, 0, 0);
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.top-right{
+    display: flex;
+    gap: 20%;
+    align-items: center;
+    
+}
+
+.top-right a{
+    text-decoration: none;
+    color: cornsilk;
+}
+
+
+
+.resume-download{
+    display: flex;
+    align-items: center;
+    border: solid 2px rgb(90, 63, 61);
+    border-radius: 10px;
+    gap: 5px;
+    padding: 10px 15px;
+}
+
+.gettouch{
+    border: solid grey 2px;
+    border-radius:20px;
+    padding:10px;
+    display: flex;
+    align-items: center;
+}
+
+hr{
+    border: none;
+    height: 1px;
+    background-color: rgba(255,255,255,0.2);
+}
+
+.resume-download:hover,
+.gettouch:hover{
+    transform: translateY(-2px);
+    transition: 0.3s;
+    color: aliceblue;
+    border: white 1px  solid;
+}
+
+.list li a:hover{
+    color: white;
+    transition: 0.3s;
+}
