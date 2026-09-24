@@ -10,6 +10,7 @@ var completed=0;
 function addTask()
 {
    let task_value=task.value;
+    success.textContent="";
 
    if(task_value.trim() === "")
    {
@@ -25,7 +26,8 @@ function addTask()
     <div class="task-item">
         <input type="checkbox" onchange="taskStatus(this)">
         <span>${task_value}</span>
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" onclick="removetask(this)" class="bi bi-x" viewBox="0 0 16 16">
+        <button onclick="editTask(this)">Edit</button>
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" onclick="removetask(this)" class="bi bi-x" viewBox="0 0 16 16">
         <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
         </svg>
     </div>
@@ -34,8 +36,25 @@ function addTask()
    task.value = "";
    }
 
+  
+
 }
 
+function editTask(element)
+{
+    let taskText=element.previousElementSibling;
+    // task.value=taskcontent.textContent;
+    let updatedTask = prompt(
+        "Edit Task",
+        taskText.textContent
+    );
+
+    if(updatedTask !== null && updatedTask.trim() !== "")
+    {
+        taskText.textContent = updatedTask;
+    }
+
+}
 function showerror(msg)
 {
    error.style.color="red";
@@ -43,16 +62,7 @@ function showerror(msg)
 }
 
 
-reset.addEventListener("click",()=>
-{
-    task.value="";
-    error.textContent="";
-    success.textContent="";
-    list.innerHTML="";
-    completed=0;
-    uncompleted=0;
-    updateCount();
-})
+
 
 
 function removetask(x)
@@ -103,3 +113,14 @@ function updateCount()
     complete.textContent = `Completed ${completed}`;
     uncomplete.textContent = `UnCompleted ${uncompleted}`;
 }
+
+reset.addEventListener("click",()=>
+{
+    task.value="";
+    error.textContent="";
+    success.textContent="";
+    list.innerHTML="";
+    completed=0;
+    uncompleted=0;
+    updateCount();
+})
