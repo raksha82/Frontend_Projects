@@ -63,6 +63,12 @@ span{
 }
 
 .task-item {
-    display: block;
+    display: flex;
+    align-items: center;
     margin: 10px 0;
+}
+
+.task-item svg{
+    margin-left: 15px;
+    border: solid rgb(161, 151, 151) 1px;
 }
