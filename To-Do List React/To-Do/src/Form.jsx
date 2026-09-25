@@ -1,9 +1,12 @@
+import './Form.css'
+
 function Form()
 {
-    const formstyle="form-Container";
-    return <div>
-    <form className={formstyle}>
+    return <div className="form">
+    <form className="form-Container">
         <input placeholder="Enter the Title" type="text" min={1}></input>
+        <textarea type="text" placeholder="Description"></textarea>
+        <button>Add Task</button>
     </form>
     </div>
     

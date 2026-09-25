@@ -1,0 +1,15 @@
+.form-Container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    border: solid 2px rgb(82, 48, 48);
+    padding: 15px;
+    font-family: "Fira Sans", sans-serif;
+
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+}
