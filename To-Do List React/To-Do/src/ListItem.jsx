@@ -1,3 +1,5 @@
+import './ListItem.css'
+
 function ListItem({ tasks, deleteTask }) {
 
   return (

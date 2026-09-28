@@ -5,7 +5,7 @@ import ToDoList from './ToDoList';
 import ListItem from './ListItem';
 
 function App() {
-  onst [tasks, setTasks] = useState([]);
+  const [tasks, setTasks] = useState([]);
 
   function addTask(task) {
     setTasks([...tasks, task]);

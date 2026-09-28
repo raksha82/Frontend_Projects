@@ -1,11 +1,10 @@
 import ListItem from "./ListItem";
-
+import './ToDoList.css'
 function ToDoList({ tasks, deleteTask }) {
 
   return (
     <div className="todo-list">
 
-      <h2>Tasks</h2>
 
       <ListItem
         tasks={tasks}
