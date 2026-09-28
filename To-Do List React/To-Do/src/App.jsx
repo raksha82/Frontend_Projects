@@ -5,16 +5,21 @@ import ToDoList from './ToDoList';
 import ListItem from './ListItem';
 
 function App() {
-  // const [count, setCount] = useState("");
+  onst [tasks, setTasks] = useState([]);
 
-  // // const formInput=()=>{
-  // //   setCount(())
-  // // }
+  function addTask(task) {
+    setTasks([...tasks, task]);
+  }
+
+  function deleteTask(index) {
+    const updatedTasks = tasks.filter((_, i) => i !== index);
+    setTasks(updatedTasks);
+  }
 
   return (
     <>
-      <Form/>
-      <ToDoList/>
+      <Form addTask={addTask}/>
+      <ToDoList tasks={tasks} deleteTask={deleteTask}/>
     </>
   )
 }
