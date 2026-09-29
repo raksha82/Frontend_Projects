@@ -3,13 +3,13 @@ import './ListItem.css'
 
 function ListItem({ tasks, deleteTask }) {
 
-    const[check,setCheck]=useState("");
+    // const[check,setCheck]=useState("");
 
-    const changecolor=()=>{
-        setCheck(()=>{
+    // const changecolor=()=>{
+    //     setCheck(()=>{
 
-        })
-    }
+    //     })
+    // }
 
   return (
     <table>
