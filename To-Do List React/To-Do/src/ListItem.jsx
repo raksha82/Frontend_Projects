@@ -1,6 +1,15 @@
+import { useState } from 'react';
 import './ListItem.css'
 
 function ListItem({ tasks, deleteTask }) {
+
+    const[check,setCheck]=useState("");
+
+    const changecolor=()=>{
+        setCheck(()=>{
+
+        })
+    }
 
   return (
     <table>
