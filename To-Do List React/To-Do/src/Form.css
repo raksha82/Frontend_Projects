@@ -1,41 +1,65 @@
-.form {
-    width: 500px;
-    margin: 40px auto;
-    
+
+
+.Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
 }
 
 .form-Container {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    padding: 25px;
-    border: 1px solid #ddd;
+    padding: 3%;
+    border: 3px solid #cfd6e4;
     border-radius: 10px;
-    
+    background-color: #780606;
 }
 
 .form-Container label {
     font-size: 24px;
     font-weight: bold;
+    background-color: #780606;
+    color: rgb(198, 198, 41);
 }
 
 .form-Container input,
 .form-Container textarea {
     padding: 12px;
     font-size: 16px;
+    color: aliceblue;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 13px;
+    background-color: #780606;
 }
 
 .form-Container textarea {
-    height: 100px;
+    height: 50px;
     resize: vertical;
 }
 
 .form-Container button {
-    padding: 12px;
+    padding: 10px;
     font-size: 16px;
-    border: none;
-    border-radius: 5px;
+    color: rgb(112, 224, 214);
+    font-weight: 800;
+    border-radius: 15px;
+    border: solid 2px rgb(158, 146, 146);
     cursor: pointer;
+    background-color: #780606;
+}
+
+.button-container{
+    background-color: #780606;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h4{
+    background-color: #e3dbdb;
+    color: red;
+    font-size: 20px;
+    font-weight: 900;
 }
