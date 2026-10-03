@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1%;
+    background-color: rgb(9, 9, 101);
+}
+
+.name{
+    color: rgb(214, 10, 10);
+    text-shadow: 4px 4px 5px black;
+    font-size: 25px;
+}
+
+.links{
+    display: flex;
+    gap: 25px;
+}
+
+.links a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.order-button button{
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: 800;
+    color: rgb(88, 3, 48);
+    background-color: rgb(234, 229, 221);
+}
+
+ .links a:hover{
+    font-size:19px ;
+    color: rgb(194, 194, 229);
+}
