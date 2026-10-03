@@ -17,6 +17,7 @@ body{
     font-family: "Archivo Black", sans-serif;
     color: whitesmoke;
     align-items: center;
+    border-bottom: solid 1px white;
 }
 
 .name
