@@ -1,30 +1,27 @@
 import { useState } from "react";
 import './Form.css'
 
-function Form({ addTask , title , setTitle, description , setDescription , updateTask , editId }){
+function Form({ addTask }){
   const [error, setError] = useState("");
+  const [title, setTitle] = useState("");
+  const [description, setDescription] = useState("");
+  
 
   const alltask=(e)=>{
     e.preventDefault();
 
-    
-
     if(title.trim()==="")
     {
-      setError("Enter the Title");
-      return;
+      return setError("Enter the Title");
+      
     }
 
     else if(description.trim()==="")
     {
-      setError("Enter the Description");
-      return ;
+      return setError("Enter the Description");
+      
     }
 
-    else if (editId !== null) {
-    updateTask();
-    return;
-     }
    
       setError("");
       const obj={
@@ -32,7 +29,7 @@ function Form({ addTask , title , setTitle, description , setDescription , updat
       Title:title,
       Description:description,
       Status:false
-    }
+      }
 
     addTask(obj);
     setTitle("");
@@ -49,7 +46,7 @@ function Form({ addTask , title , setTitle, description , setDescription , updat
       <textarea placeholder="Enter the Description" value={description} onChange={(e) =>{setDescription(e.target.value)}}></textarea>
       <div className="button-container">
         <button type="submit">Add Task</button>
-        <h4>{error}</h4>
+        <span>{error}</span>
       </div> 
     </form>
   </div>

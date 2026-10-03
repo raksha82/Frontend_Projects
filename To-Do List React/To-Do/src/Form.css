@@ -57,9 +57,11 @@
     align-items: center;
 }
 
-h4{
+span{
+    margin-top: 5px;
     background-color: #e3dbdb;
+    border-radius: 7px;
     color: red;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 900;
 }

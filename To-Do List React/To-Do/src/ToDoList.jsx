@@ -1,12 +1,12 @@
 
 import './ToDoList.css'
-function ToDoList({ task , deleteTask , editTask , checkboxStatus}) {
+function ToDoList({ task , deleteTask  , checkboxStatus}) {
 
   return (
     <div className='table-container'>
     <table>
 
-      <caption>Task List</caption>
+      {/* <caption>Task List</caption> */}
 
       <thead>
         <tr>
@@ -23,15 +23,19 @@ function ToDoList({ task , deleteTask , editTask , checkboxStatus}) {
         {task.map((tasks) => (
           <tr key={tasks.Id}>
 
-            <td>{tasks.Id}</td>
+            <td style={{
+                textDecoration: tasks.Status ? "line-through" : "none",
+                color: tasks.Status ? "black" : "white"}}>{tasks.Id}</td>
 
             <td style={{
-                textDecoration: tasks.Status ? "line-through" : "none"}}>{tasks.Title}</td>
+                textDecoration: tasks.Status ? "line-through" : "none",
+                color: tasks.Status ? "black" : "white"}}>{tasks.Title}</td>
 
-            <td>{tasks.Description}</td>
+            <td style={{
+                textDecoration: tasks.Status ? "line-through" : "none",
+                color: tasks.Status ? "black" : "white"}}>{tasks.Description}</td>
 
             <td>
-              <button onClick={()=>editTask(tasks.Id)}>Edit</button>
 
               <button onClick={() => deleteTask(tasks.Id)}>
                 Delete
@@ -40,8 +44,6 @@ function ToDoList({ task , deleteTask , editTask , checkboxStatus}) {
 
             <td className="check">
               <input type="checkbox" 
-            
-              checked={tasks.Status}
               onChange={() => checkboxStatus(tasks.Id)}/>
             </td>
 

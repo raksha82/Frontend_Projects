@@ -6,6 +6,10 @@ body{
     background-color: rgb(90, 2, 2);
 }
 
+
+/* Header Section */
+
+
 .header-section{
     display: flex;
     flex-direction: row;

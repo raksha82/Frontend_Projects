@@ -1,7 +1,4 @@
-.todo-list {
-    width: 900px;
-    margin: 40px auto;
-}
+
 
 caption {
     text-align: center;
@@ -13,13 +10,13 @@ caption {
 }
 
 table{
-    border-collapse:collapse;
-    
+    border-collapse:collapse;   
 }
 
 .table-container{
     display: flex;
     justify-content: center;
+    padding: 20px;
     
 }
 
