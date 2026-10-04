@@ -98,19 +98,19 @@ body{
     /* width: 100%; */
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 25px;
     /* gap: 20px; */
 }
 
 .menu-list img{
   width: 100%;
-  height: 700px;
-  object-fit:fill;
+  height: 500px;
+  object-fit:cover;
 }
 
 .menus{
-    width: 30%;
+    width: 25%;
     border: solid white 2px;
 }
 
